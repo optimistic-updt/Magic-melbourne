@@ -49,11 +49,13 @@ app.get('/index', (req, res) => {
 
     // res.send(url)
     
-    axios.get(url,{
-        headers: {
-            'x-api-key': 'BNLiHyXDsUa1OhdwsHho47y6rO0HKcNa5BWnofl7'
-          }
-    }).then(response =>{
+    axios.get(url
+    //     ,{
+    //     headers: {
+    //         'x-api-key': 'BNLiHyXDsUa1OhdwsHho47y6rO0HKcNa5BWnofl7'
+    //       }
+    // }
+    ).then(response =>{
         //clean up the date to provide us the relevant information
         let arrOfPlaces = response.data.data.places
         let arrOfInstances = []
