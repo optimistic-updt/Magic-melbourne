@@ -1,4 +1,12 @@
-.sign_in_button {
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    padding: 0 50px;
+}
+
+nav .sign_in_button {
     background-color: #6557f5; 
     border: 1px solid #6557f5;
     color: white;
@@ -12,18 +20,18 @@
     font-size: 16px;
 }
 
-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    border-bottom: 2px solid gray;
-    padding: 0 50px;
-}
-
 nav p {
     text-align: right;
 }
 
+nav h3 {
+    font-size: 20px;
+}
+
+nav i {
+    font-size: 20px;
+    margin-right: 20px;
+}
 
 .global_component {
     width: 70%;
