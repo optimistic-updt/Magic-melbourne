@@ -5,6 +5,7 @@ const port = 8080;
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const axios = require('axios');
+const geoJSON = require('./library/geoJSON_module');
 
 ////////////   Middleware /////////////
 app.set('view engine', 'ejs');
@@ -57,7 +58,10 @@ app.get('/api/mediawiki', (req, res) => {
     })
 })
 
-
+// geoJSON output
+app.get('/api/geojson', (req, res) => {
+    res.json(geoJSON.displayPOI());
+})
 
 
 
