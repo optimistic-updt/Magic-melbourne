@@ -1,7 +1,7 @@
 ////////////   Modules  /////////////
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 3000;
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const axios = require('axios');
